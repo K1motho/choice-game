@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black itsems-centred justify-center flex-col flex h-screen">
+    
+
+    <div class="bg-gradient-to-r from-blue-500 to-green-500 p-8 rounded-3xl shadow-2xl max-w-md text-center">
+        <h1 class="text-4xl font-bold mb-6 text-white">Rock, Paper, Scissors</h1>
+        <div class="flex justify-center space-x-6">
+            <!-- Rock Button with image -->
+            <button id="rock" class="w-24 h-24 bg-cover rounded-full border-4 border-white hover:scale-110 transform transition duration-300 ease-in-out"
+                    style="background-image: url('pexels-photo-2363901.jpeg');">
+            </button>
+            <!-- Paper Button with image -->
+            <button id="paper" class="w-24 h-24 bg-cover rounded-full border-4 border-white hover:scale-110 transform transition duration-300 ease-in-out"
+                    style="background-image: url('pexels-photo-268349.webp');">
+            </button>
+            <!-- Scissors Button with image -->
+            <button id="makasi" class="w-24 h-24 bg-cover rounded-full border-4 border-white hover:scale-110 transform transition duration-300 ease-in-out"
+                    style="background-image: url('pexels-photo-4226896.webp');">
+            </button>
+        </div>
+
+        <div id="scoreboard" class="mt-4 text-white">
+            <div id="result" class="mt-4 text-xl font-bold text-yellow-300"></div>
+            <div id="userChoice" class="mt-2 text-white"></div>
+            <div id="computerChoice" class="mt-2 text-white"></div>
+
+            wins: <span id="wins">0</span> |
+            losses: <span id="losses">0</span> |
+            ties: <span id="ties">0</span>
+        </div>
+
+        <!-- Start Game Button -->
+        <button id="startGame" class="mt-6 px-6 py-3 bg-green-500 text-white rounded-xl hover:bg-green-600 transition duration-300">
+            Start Game
+        </button>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    
+</body>
+</html>
