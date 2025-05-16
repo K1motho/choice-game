@@ -59,13 +59,13 @@ function playGame(userChoice) {
     // Update result display
     document.getElementById('result').textContent = result;
     updateScoreboard();
-}
+};
 
 function updateScoreboard() {
     document.getElementById('wins').textContent = scores.wins;
     document.getElementById('losses').textContent = scores.losses;
     document.getElementById('ties').textContent = scores.ties;
-}
+};
 
 function resetGame() {
     scores.wins = 0;
@@ -75,4 +75,4 @@ function resetGame() {
     document.getElementById('userChoice').textContent = '';
     document.getElementById('computerChoice').textContent = '';
     updateScoreboard();
-}
+};
